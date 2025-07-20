@@ -1,77 +1,77 @@
+# 行動規範
 
-# Code of Conduct
+## 私たちの誓約
 
-## Our Pledge
+オープンで親しみやすい環境を育成するために、私たち
+コントリビューターとメンテナーは、年齢、体型、
+障害、民族性、性的特徴、性同一性および性表現、
+経験レベル、教育、社会経済的地位、国籍、個人的
+外見、人種、宗教、または性同一性と性的指向に関係なく、
+プロジェクトとコミュニティへの参加を誰にとってもハラスメントのない体験にすることを誓約します。
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to make participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+## 私たちの基準
 
-## Our Standards
+ポジティブな環境の創造に貢献する行動の例には
+以下が含まれます：
 
-Examples of behavior that contributes to creating a positive environment
-include:
+* 歓迎的で包括的な言葉遣いを使用する
+* 異なる視点や経験を尊重する
+* 建設的な批判を優雅に受け入れる
+* コミュニティにとって最善のことに焦点を当てる
+* 他のコミュニティメンバーに対して共感を示す
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+参加者による受け入れられない行動の例には以下が含まれます：
 
-Examples of unacceptable behavior by participants include:
+* 性的な言葉や画像の使用、および歓迎されない性的関心や
+  アプローチ
+* トローリング、侮辱的/軽蔑的なコメント、および個人的または政治的攻撃
+* 公的または私的なハラスメント
+* 明示的な許可なく、物理的または電子的
+  住所などの他者の私的情報を公開すること
+* 専門的な環境において不適切と合理的に考えられる
+  その他の行為
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-  advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+## 私たちの責任
 
-## Our Responsibilities
+プロジェクトメンテナーは、受け入れられる行動の基準を明確にする責任があり、
+受け入れられない行動のいかなる事例に対しても
+適切で公正な是正措置を取ることが期待されます。
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+プロジェクトメンテナーは、この行動規範に沿わない
+コメント、コミット、コード、ウィキ編集、issue、その他の貢献を
+削除、編集、または拒否する権利と責任を持ち、
+不適切、脅迫的、攻撃的、または有害と判断される
+その他の行為について、コントリビューターを一時的または
+恒久的に追放する権利と責任を持ちます。
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+## 適用範囲
 
-## Scope
+この行動規範はすべてのプロジェクトスペース内で適用され、また
+個人がパブリックスペースでプロジェクトまたはそのコミュニティを代表する際にも適用されます。
+プロジェクトまたはコミュニティを代表することの例には、公式の
+プロジェクトメールアドレスの使用、公式ソーシャルメディアアカウントによる投稿、
+またはオンラインやオフラインのイベントでの指名された代表としての行動が含まれます。プロジェクトの代表は
+プロジェクトメンテナーによってさらに定義・明確化される場合があります。
 
-This Code of Conduct applies within all project spaces, and it also applies when
-an individual is representing the project or its community in public spaces.
-Examples of representing a project or community include using an official
-project e-mail address, posting via an official social media account, or acting
-as an appointed representative at an online or offline event. Representation of
-a project may be further defined and clarified by project maintainers.
+## 執行
 
-## Enforcement
+虐待的、ハラスメント的、またはその他の受け入れられない行動の事例は、
+<themes-team@shopify.com>でプロジェクトチームに連絡することで報告できます。すべての
+苦情は審査・調査され、状況に応じて必要かつ適切と判断される
+対応を行います。プロジェクトチームは
+インシデントの報告者に関して機密性を維持する義務があります。
+具体的な執行ポリシーの詳細は別途投稿される場合があります。
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at <themes-team@shopify.com>. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+行動規範を善意で遵守または執行しない
+プロジェクトメンテナーは、プロジェクトリーダーシップの
+他のメンバーによって決定される一時的または恒久的な処罰に直面する可能性があります。
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+## 帰属
 
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+この行動規範は[Contributor Covenant][homepage]、バージョン1.4から
+適応されており、https://www.contributor-covenant.org/version/1/4/code-of-conduct.html で利用可能です
 
 [homepage]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see
-https://www.contributor-covenant.org/faq
+この行動規範に関するよくある質問への回答については、
+https://www.contributor-covenant.org/faq を参照してください

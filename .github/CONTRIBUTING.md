@@ -1,151 +1,151 @@
-# Contributing
+# コントリビューション
 
-[Before contributing](#before-contributing) |
-[Scope](#scope) |
-[Theme code principles](#theme-code-principles) |
-[Contributing code](#contributing-code) |
-[Reporting a bug](#reporting-a-bug) |
-[Reviewing](#reviewing)
+[コントリビュート前に](#コントリビュート前に) |
+[スコープ](#スコープ) |
+[テーマコードの原則](#テーマコードの原則) |
+[コードのコントリビュート](#コードのコントリビュート) |
+[バグの報告](#バグの報告) |
+[レビュー](#レビュー)
 
-We're really glad you're reading this, because we would love to have more developers contribute to this theme! If you're passionate about building for the next million entrepreneurs, you're in the right place.
+このドキュメントをお読みいただきありがとうございます。より多くの開発者にこのテーマへ貢献していただきたいと思っています！次の100万人の起業家のために構築することに情熱を持っているなら、あなたは正しい場所にいます。
 
-## Before contributing
+## コントリビュート前に
 
-If you encounter a bug or think of a useful feature for Dawn, please [create a new issue](https://github.com/Shopify/dawn/issues/new). Creating an issue before jumping into code ensures we can discuss it and determine whether it aligns with the direction of the theme.
+Dawnでバグに遭遇した場合や有用な機能を思いついた場合は、[新しいイシューを作成](https://github.com/Shopify/dawn/issues/new)してください。コードに取り掛かる前にイシューを作成することで、それについて議論し、テーマの方向性と一致するかどうかを判断できます。
 
-If you want to contribute to the theme, regardless of whether it's a small bug fix or correcting a typo, please feel free to do so. Any help goes a long way! Also, contributions aren't necessarily all code related. Other contributions can be in the form of issues, pull requests, discussions, etc.
+小さなバグ修正やタイポの修正であっても、テーマに貢献したい場合は、お気軽にどうぞ。どんな助けも大歓迎です！また、貢献は必ずしもコード関連だけではありません。イシュー、プルリクエスト、ディスカッションなどの形での貢献もあります。
 
-## Scope
+## スコープ
 
-This Github repository exists for the theme development community to discuss and solve problems directly related to Dawn. It **is not the place** to discuss general theme development problems, nor the place to seek help for non-Dawn related problems.
+このGitHubリポジトリは、テーマ開発コミュニティがDawnに直接関連する問題について議論し解決するために存在します。一般的なテーマ開発の問題を議論する場所**ではなく**、Dawn以外の問題に関する助けを求める場所でもありません。
 
-Shopify theme development is a big topic and it's completely normal that you will encounter problems which might require you to reach out for help. In fact, we provide several knowledge and support platforms for theme development already:
+Shopifyテーマ開発は大きなトピックであり、助けを求める必要がある問題に遭遇するのは完全に正常です。実際、私たちはすでにテーマ開発のためのいくつかの知識とサポートプラットフォームを提供しています：
 
 * [Shopify Development](https://shopify.dev/themes)
-* [Shopify Help Center](https://help.shopify.com/themes)
-* [Shopify Forum](https://ecommerce.shopify.com/forums)
-* [Shopify Experts](https://experts.shopify.com/)
+* [Shopify ヘルプセンター](https://help.shopify.com/themes)
+* [Shopify フォーラム](https://ecommerce.shopify.com/forums)
+* [Shopify エキスパート](https://experts.shopify.com/)
 
-## Theme code principles
+## テーマコードの原則
 
-Before contributing to Dawn, please read the following theme code principles to better understand our fundamental approach to theme development. The expectation is that you follow these principles as you build for Dawn.
+Dawnに貢献する前に、テーマ開発に対する私たちの基本的なアプローチをよりよく理解するために、以下のテーマコードの原則をお読みください。Dawnのために構築する際は、これらの原則に従うことが期待されています。
 
-### Why these principles?
+### なぜこれらの原則なのか？
 
-Browsers provide APIs to solve many problems: from [WebGL](https://en.wikipedia.org/wiki/WebGL) and [WASM](https://en.wikipedia.org/wiki/WebAssembly)-powered apps to static websites. The best APIs to use depends on the thing you’re building. Themes power ecommerce websites. In most cases, _Web-native_—making the most of the built-in features of browsers: HTTP, HTML, CSS, JavaScript, and the DOM—is a perfect fit for ecommerce websites. Ecommerce needs incredibly fast websites for mostly “logged out” traffic.
+ブラウザは多くの問題を解決するためのAPIを提供しています：[WebGL](https://en.wikipedia.org/wiki/WebGL)や[WASM](https://en.wikipedia.org/wiki/WebAssembly)を搭載したアプリから静的なウェブサイトまで。使用する最適なAPIは、構築しているものによって異なります。テーマはeコマースウェブサイトを動かします。ほとんどの場合、_Webネイティブ_—ブラウザの組み込み機能を最大限に活用すること：HTTP、HTML、CSS、JavaScript、そしてDOM—はeコマースウェブサイトに完璧に適合します。eコマースには、主に「ログアウト」したトラフィックのために、信じられないほど高速なウェブサイトが必要です。
 
-### Web-native in its purest form
+### 最も純粋な形でのWebネイティブ
 
-_The most important principle._
+_最も重要な原則。_
 
-Themes run on the [evergreen Web](https://www.w3.org/2001/tag/doc/evergreen-web/). We leverage the latest web browsers to their fullest, while maintaining support for the older ones through progressive enhancement—not polyfills.
+テーマは[エバーグリーンWeb](https://www.w3.org/2001/tag/doc/evergreen-web/)上で動作します。私たちは最新のWebブラウザを最大限に活用しながら、ポリフィルではなくプログレッシブエンハンスメントを通じて古いブラウザのサポートを維持します。
 
-We write bespoke Web-native code with no abstractions. Frameworks, libraries, and dependencies don’t belong in our themes.
+私たちは抽象化なしに、オーダーメイドのWebネイティブコードを書きます。フレームワーク、ライブラリ、依存関係は私たちのテーマには属しません。
 
-We engage with the browser ecosystem on behalf of our merchants to make Web-native ecommerce the best it can be.
+私たちは、Webネイティブなeコマースをできるだけ良いものにするために、マーチャントに代わってブラウザエコシステムに関与します。
 
-“Don’t repeat yourself” is an anti-pattern. We do our utmost best to do more with less, but we don’t build abstractions around repetition. Instead, we use linting and testing to enforce consistently-good and up-to-date Web-native code.
+「繰り返さない」はアンチパターンです。私たちは少ないもので多くのことを行うよう最善を尽くしますが、繰り返しの周りに抽象化を構築しません。代わりに、一貫して良い最新のWebネイティブコードを強制するためにリンティングとテストを使用します。
 
-### Lean, fast, and reliable
+### リーン、高速、信頼性
 
-_The principle requirement._
+_原則的な要件。_
 
-Code must be lean, fast, and reliable. Our targets include:
+コードはリーン、高速、信頼性がなければなりません。私たちの目標には以下が含まれます：
 
-* Zero [Cumulative Layout Shift](https://web.dev/cls/)
-* No DOM manipulation before user input
-* No render-blocking JavaScript
-* No [long tasks](https://developer.mozilla.org/en-US/docs/Web/API/Long_Tasks_API)
+* ゼロ[累積レイアウトシフト](https://web.dev/cls/)
+* ユーザー入力前のDOM操作なし
+* レンダリングをブロックするJavaScriptなし
+* [長いタスク](https://developer.mozilla.org/en-US/docs/Web/API/Long_Tasks_API)なし
 
-Functionality and design defaults to “no” until it meets this requirement. Code ships on quality.
+機能とデザインは、この要件を満たすまでデフォルトで「いいえ」です。コードは品質に基づいて出荷されます。
 
-We relentlessly and continuously optimize code within the constraint of being Web-native. If ever there is a feature that browsers have not made fast yet, we either don’t use it, or use it “as is” if it is fast enough. We trust that browsers will get faster over time.
+私たちは、Webネイティブであるという制約の中で、コードを容赦なく継続的に最適化します。ブラウザがまだ高速化していない機能がある場合、それを使用しないか、十分に高速であれば「そのまま」使用します。私たちは、ブラウザが時間とともに高速になることを信頼しています。
 
-Themes must be built with purpose. They shouldn’t support each and every feature in Shopify.
+テーマは目的を持って構築されなければなりません。Shopifyのすべての機能をサポートする必要はありません。
 
-### Server-rendered
+### サーバーレンダリング
 
-_Our main constraint._
+_私たちの主な制約。_
 
-HTML must be rendered by Shopify servers using [Liquid](https://shopify.dev/api/liquid). Business logic and platform primitives such as translations and money formatting don’t belong on the client.
+HTMLは[Liquid](https://shopify.dev/api/liquid)を使用してShopifyサーバーによってレンダリングされなければなりません。ビジネスロジックや翻訳、通貨フォーマットなどのプラットフォームプリミティブはクライアントに属しません。
 
-Server-rendered doesn’t imply “full page reload”. Async and on-demand rendering of parts of the page is OK, but we do it sparingly as a progressive enhancement.
+サーバーレンダリングは「フルページリロード」を意味しません。ページの一部の非同期およびオンデマンドレンダリングはOKですが、プログレッシブエンハンスメントとして控えめに行います。
 
-### Functional, not pixel-perfect
+### 機能的、ピクセルパーフェクトではない
 
-_No buyer is left behind._
+_購入者は誰も取り残されない。_
 
-The Web doesn’t require each page to be rendered pixel-perfect by each browser engine. Using semantic markup, progressive enhancement, and clever design, we ensure that themes remain functional regardless of the browser.
+Webは、各ブラウザエンジンによって各ページがピクセルパーフェクトにレンダリングされることを要求しません。セマンティックマークアップ、プログレッシブエンハンスメント、賢いデザインを使用して、ブラウザに関係なくテーマが機能的であることを保証します。
 
-And since legacy browsers are often the slowest, we don’t burden them with polyfills. We rely instead on the fail-open nature of the Web to provide them with a “minimal but functional” experience.
+そして、レガシーブラウザはしばしば最も遅いので、ポリフィルで負担をかけません。代わりに、Webのフェイルオープンな性質に頼って、「最小限だが機能的な」体験を提供します。
 
-## Contributing code
+## コードのコントリビュート
 
-You can follow these steps to go from setting up a store to creating a pull request for Dawn.
+ストアのセットアップからDawnのプルリクエスト作成まで、以下の手順に従うことができます。
 
->:information_source: We'll assume you're already set up with Git and GitHub (if you're not familiar with these, [start with these docs](https://docs.github.com/github/getting-started-with-github/quickstart/set-up-git)).
+>:information_source: GitとGitHubにすでに慣れていることを前提としています（これらに慣れていない場合は、[これらのドキュメントから始めてください](https://docs.github.com/github/getting-started-with-github/quickstart/set-up-git)）。
 
-1. Set up a [development store](https://shopify.dev/themes/tools/development-stores) so you can test your code changes (assuming you don't already have a store).
-2. Install the [Shopify CLI](https://github.com/Shopify/shopify-cli) by following [these steps](https://shopify.dev/themes/tools/cli/installation).
-3. Fork the repository, clone it and create a new branch:
+1. コードの変更をテストできるように[開発ストア](https://shopify.dev/themes/tools/development-stores)をセットアップします（すでにストアを持っていない場合）。
+2. [これらの手順](https://shopify.dev/themes/tools/cli/installation)に従って[Shopify CLI](https://github.com/Shopify/shopify-cli)をインストールします。
+3. リポジトリをフォークし、クローンして新しいブランチを作成します：
 ```sh
 git clone git@github.com:your-username/dawn.git
 cd dawn
 git checkout -b your-new-branch-name
 ```
-4. Launch a development server:
+4. 開発サーバーを起動します：
 ```sh
 shopify theme serve
 ```
-5. Add your changes to the codebase.
-6. Commit your changes:
+5. コードベースに変更を加えます。
+6. 変更をコミットします：
 ```sh
 git commit -a -m="Your commit message"
 ```
-7. Push your commit to your forked repository:
+7. フォークしたリポジトリにコミットをプッシュします：
 ```sh
 git push origin your-new-branch-name
 ```
-8. Open a pull request. See [GitHub's official documentation](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) for more details.
-9. Before you can merge your pull request, you must sign Shopify's [Contributor License Agreement (CLA)](https://cla.shopify.com/).
+8. プルリクエストを開きます。詳細については、[GitHubの公式ドキュメント](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)を参照してください。
+9. プルリクエストをマージする前に、Shopifyの[コントリビューターライセンス契約（CLA）](https://cla.shopify.com/)に署名する必要があります。
 
-## Reporting a bug
+## バグの報告
 
-Bugs are tracked as [GitHub issues](https://github.com/Shopify/dawn/issues). Search open issues to see if someone else has reported a similar bug. If it's something new, [open an issue](https://github.com/Shopify/dawn/issues/new). We'll use the issue to have a conversation about the problem you want to fix.
+バグは[GitHubイシュー](https://github.com/Shopify/dawn/issues)として追跡されます。同様のバグが報告されているかどうかを確認するために、オープンイシューを検索してください。新しいものである場合は、[イシューを開いてください](https://github.com/Shopify/dawn/issues/new)。修正したい問題について会話するためにイシューを使用します。
 
-When creating a new issue, please ensure the issue is clear and include additional details to help maintainers reproduce it:
+新しいイシューを作成する際は、イシューが明確であり、メンテナーが再現するのに役立つ追加の詳細を含めてください：
 
-* **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem** in as many details as possible.
-* **Provide specific examples to demonstrate the steps.** Include links to files, or copy/pasteable snippets. If you're providing snippets in the issue, use Markdown code blocks.
-* **Describe the behavior you observed** after following the steps and point out what exactly is the problem with that behavior.
-* **Explain which behavior you expected to see** instead and why.
-* **Include screenshots and animated GIFs** where possible.
+* **問題を特定するために明確で説明的なタイトルを使用**してください。
+* **問題を再現する正確な手順をできるだけ詳細に説明**してください。
+* **手順を示す具体的な例を提供**してください。ファイルへのリンクや、コピー/ペースト可能なスニペットを含めてください。イシューでスニペットを提供する場合は、Markdownコードブロックを使用してください。
+* **手順に従った後に観察した動作を説明**し、その動作の何が問題なのかを正確に指摘してください。
+* **代わりに期待した動作とその理由を説明**してください。
+* **可能な場合はスクリーンショットとアニメーションGIFを含めて**ください。
 
-## Reviewing
+## レビュー
 
-We (the Themes team) review every single PR. The purpose of reviews is to create the best version of Dawn we can for merchants, developers, and others who use it.
+私たち（テーマチーム）はすべてのPRをレビューします。レビューの目的は、マーチャント、開発者、およびそれを使用する他の人々のために、Dawnの最高のバージョンを作成することです。
 
-:yellow_heart: Reviews are always respectful, acknowledging that everyone did the best possible job with the knowledge they had at the time.
-:yellow_heart: Reviews discuss content, not the person who created it.
-:yellow_heart: Reviews are constructive and start conversation around feedback.
+:yellow_heart: レビューは常に敬意を持って行われ、誰もがその時点で持っていた知識で最善の仕事をしたことを認めます。
+:yellow_heart: レビューは、それを作成した人ではなく、コンテンツについて議論します。
+:yellow_heart: レビューは建設的で、フィードバックについて会話を始めます。
 
-### Self review
+### セルフレビュー
 
-You should always review your own PR first.
+常に最初に自分のPRをレビューする必要があります。
 
-For code changes, make sure that you:
-- [ ] Confirm that the changes meet our [theme code principles](#theme-code-principles).
-- [ ] Check new or updated Liquid docs to confirm that the code used is up to date and isn't deprecated.
-- [ ] If there are any failing checks in your PR, troubleshoot them until they're all passing.
-- [ ] Add @Shopify/themes-front-end-developers as a reviewer.
+コードの変更については、以下を確認してください：
+- [ ] 変更が私たちの[テーマコードの原則](#テーマコードの原則)を満たしていることを確認します。
+- [ ] 使用されているコードが最新であり、非推奨ではないことを確認するために、新しいまたは更新されたLiquidドキュメントを確認します。
+- [ ] PRに失敗しているチェックがある場合は、すべて合格するまでトラブルシューティングします。
+- [ ] @Shopify/themes-front-end-developersをレビュアーとして追加します。
 
-### Pull request template
+### プルリクエストテンプレート
 
-When you open a pull request, you must fill out the "Ready for review" template before we can review your PR. This template helps reviewers understand your changes and the purpose of your pull request.
+プルリクエストを開くときは、PRをレビューする前に「Ready for review」テンプレートに記入する必要があります。このテンプレートは、レビュアーがあなたの変更とプルリクエストの目的を理解するのに役立ちます。
 
-### Suggested changes
+### 提案された変更
 
-We may ask for changes to be made before a PR can be merged, either using [suggested changes](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request) or pull request comments. You can apply suggested changes directly through the UI. You can make any other changes in your fork, then commit them to your branch.
+PRがマージされる前に、[提案された変更](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request)またはプルリクエストのコメントを使用して、変更を求める場合があります。提案された変更はUIから直接適用できます。他の変更はフォークで行い、ブランチにコミットできます。
 
-As you update your PR and apply changes, mark each conversation as [resolved](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#resolving-conversations).
+PRを更新して変更を適用する際は、各会話を[解決済み](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#resolving-conversations)としてマークしてください。

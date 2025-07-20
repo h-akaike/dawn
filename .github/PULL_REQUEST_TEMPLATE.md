@@ -1,43 +1,43 @@
-### PR Summary: 
+### PR概要: 
 
-<!-- Please include a short description (using non-technical terms, 1-2 sentences) about the changes you are introducing, what problem is being fixed and/or describe the benefit to merchants. This content will be used in our release notes for Dawn on [themes.shopify.com](https://themes.shopify.com/themes/dawn/styles/default#ReleaseNotes). -->
+<!-- 導入する変更内容について、技術的でない用語を使って1-2文で簡潔に説明してください。どのような問題が修正されるか、またはマーチャントへのメリットについて記述してください。この内容は[themes.shopify.com](https://themes.shopify.com/themes/dawn/styles/default#ReleaseNotes)のDawnのリリースノートで使用されます。 -->
 
 
-### Why are these changes introduced?
+### なぜこれらの変更を導入するのか？
 
-Fixes #0.
+修正内容 #0。
 
-### What approach did you take?
+### どのようなアプローチを取ったか？
 
-### Other considerations
+### その他の考慮事項
 
-### Decision log
+### 意思決定ログ
 
-| # | Decision | Alternatives | Rationale | Downsides |
+| # | 決定 | 代替案 | 根拠 | デメリット |
 |---|---|---|---|---|
 | 1 |   |   |   |   |
 
 
-### Visual impact on existing themes
-<!-- How will this visually affect merchants who upgrade to a new theme version with this change? -->
+### 既存テーマへの視覚的影響
+<!-- この変更を含む新しいテーマバージョンにアップグレードするマーチャントに、視覚的にどのような影響があるか？ -->
 
 
-### Testing steps/scenarios
-<!-- List all the testing tasks that applies to your fix to help peers review your work. -->
-- [ ] Step 1
+### テスト手順/シナリオ
+<!-- レビュアーがあなたの作業をレビューできるよう、修正に関連するすべてのテストタスクをリストアップしてください。 -->
+- [ ] ステップ 1
 
-### Demo links
-<!-- Please include a link to a demo store that includes preconfigured sections and settings to allow reviewers to easily test the features you are working on. -->
+### デモリンク
+<!-- レビュアーがあなたが作業している機能を簡単にテストできるよう、事前設定されたセクションと設定を含むデモストアへのリンクを含めてください。 -->
 
-- [Store](url)
-- [Editor](url)
+- [ストア](url)
+- [エディター](url)
 
-### Checklist
-- [ ] Added PR summary for [release notes](https://themes.shopify.com/themes/dawn/styles/default#ReleaseNotes)
-- [ ] Requested review from UX (Only for changes that are affecting the experience or perceivable visual details)
-- [ ] Created a ticket for the [help.shopify.com](https://help.shopify.com) documentation team about updates to theme settings. (Internal-only task)
-- [ ] Followed [theme code principles](https://github.com/Shopify/dawn/blob/main/.github/CONTRIBUTING.md#theme-code-principles)
-- [ ] Linted with [Theme Check](https://github.com/Shopify/theme-check)
-- [ ] Tested on [mobile](https://shopify.dev/themes/store/requirements#mobile-browser-requirements)
-- [ ] Tested on [multiple browsers](https://shopify.dev/themes/store/requirements#desktop-browser-requirements)
-- [ ] Tested for [accessibility](https://shopify.dev/themes/best-practices/accessibility)
+### チェックリスト
+- [ ] [リリースノート](https://themes.shopify.com/themes/dawn/styles/default#ReleaseNotes)用のPR概要を追加した
+- [ ] UXからのレビューを依頼した（エクスペリエンスや視覚的な詳細に影響する変更の場合のみ）
+- [ ] テーマ設定の更新について[help.shopify.com](https://help.shopify.com)ドキュメントチーム用のチケットを作成した（内部タスクのみ）
+- [ ] [テーマコード原則](https://github.com/Shopify/dawn/blob/main/.github/CONTRIBUTING.md#theme-code-principles)に従った
+- [ ] [Theme Check](https://github.com/Shopify/theme-check)でリントした
+- [ ] [モバイル](https://shopify.dev/themes/store/requirements#mobile-browser-requirements)でテストした
+- [ ] [複数のブラウザ](https://shopify.dev/themes/store/requirements#desktop-browser-requirements)でテストした
+- [ ] [アクセシビリティ](https://shopify.dev/themes/best-practices/accessibility)をテストした
