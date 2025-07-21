@@ -11,18 +11,10 @@
       </h2>
     {% endif %}
 
-    <!-- Product Reviews App Container -->
-    <div id="easyreviews-product-reviews" data-product-id="{{ product.id }}">
-      <!-- The app will inject content here -->
+    <!-- Product Reviews Container -->
+    <div id="easyreviews-product-reviews" class="product-reviews-wrapper">
+      <!-- レビューアプリがここに内容を挿入します -->
     </div>
-
-    <!-- App Blocks Support -->
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when '@app' %}
-          {% render block %}
-      {% endcase %}
-    {% endfor %}
   </div>
 </div>
 
