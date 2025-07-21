@@ -1,6 +1,6 @@
 {% comment %}
   Product Reviews Section
-  Displays product reviews using Shopify's built-in review system or app blocks
+  Compatible with Product Reviews app and other review apps
 {% endcomment %}
 
 <div class="section-{{ section.id }}-padding">
@@ -11,21 +11,18 @@
       </h2>
     {% endif %}
 
-    <div class="product-reviews-content" id="easyreviews-product-reviews">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when '@app' %}
-            {% render block %}
-        {% endcase %}
-      {% endfor %}
-      
-      {% if section.blocks.size == 0 %}
-        <div class="product-reviews-placeholder">
-          <p>Customer reviews will appear here.</p>
-          <p>Install a review app to display customer reviews.</p>
-        </div>
-      {% endif %}
+    <!-- Product Reviews App Container -->
+    <div id="easyreviews-product-reviews" data-product-id="{{ product.id }}">
+      <!-- The app will inject content here -->
     </div>
+
+    <!-- App Blocks Support -->
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when '@app' %}
+          {% render block %}
+      {% endcase %}
+    {% endfor %}
   </div>
 </div>
 
