@@ -71,11 +71,39 @@
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
+        },
+        "button_nRrPJ3": {
+          "type": "button",
+          "settings": {
+            "button_label": "ボタンのラベル",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "caption_zP8yQf": {
+          "type": "caption",
+          "settings": {
+            "caption": "タグラインを追加",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "text_W3RVpw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ブランドに関する情報をお客様と共有します。商品を説明したり、告知をしたり、ストアへのお客様を歓迎したりします。</p>"
+          }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "button_nRrPJ3",
+        "caption_zP8yQf",
+        "text_W3RVpw"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -112,6 +140,23 @@
         "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
+      }
+    },
+    "1753115307a76f7f90": {
+      "type": "apps",
+      "blocks": {
+        "easyreviews_product_review_W6JEkF": {
+          "type": "shopify://apps/easyreviews/blocks/product_review/1341251b-09d7-46f3-ba6a-e732a50e97a5",
+          "settings": {
+            "product": "サンプル商品"
+          }
+        }
+      },
+      "block_order": [
+        "easyreviews_product_review_W6JEkF"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "collage": {
@@ -240,6 +285,7 @@
     "image_banner",
     "rich_text",
     "featured_collection",
+    "1753115307a76f7f90",
     "collage",
     "video",
     "multicolumn",
